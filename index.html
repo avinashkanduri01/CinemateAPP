@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b10">
+  <title>CineMate - Movie Recommendation System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="logo" id="logo">Cine<span>Mate</span></div>
+      <form class="search" id="searchForm" role="search">
+        <input id="searchInput" type="search" placeholder="Search movies..." autocomplete="off">
+        <button type="submit" class="btn small">Search</button>
+      </form>
+      <button class="btn surprise" id="surpriseBtn">🎲 <span>Surprise Me</span></button>
+    </div>
+    <nav class="nav" id="nav">
+      <button data-page="home" class="active"><i>🏠</i>Home</button>
+      <button data-page="genres"><i>🎭</i>Genres</button>
+      <button data-page="moods"><i>😊</i>Moods</button>
+      <button data-page="list"><i>❤️</i><b id="listLabel">My List</b></button>
+    </nav>
+  </header>
+
+  <main id="content" class="content"></main>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <script src="js/movies.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
